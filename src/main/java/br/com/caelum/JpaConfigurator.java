@@ -26,7 +26,11 @@ public class JpaConfigurator {
 		if ( user == null ) user = "root";
 
 	    DriverManagerDataSource dataSource = new DriverManagerDataSource();
-
+		
+	    System.out.println("url: " + url);
+	    System.out.println("user: " + user);
+	    System.out.println("pass: " + password);
+		
 	    dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://" + url + "/alura_aws");
 	    dataSource.setUsername(user);
