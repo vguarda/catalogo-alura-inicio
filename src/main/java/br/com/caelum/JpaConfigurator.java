@@ -53,7 +53,7 @@ public class JpaConfigurator {
 
 		props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
 		props.setProperty("hibernate.show_sql", "true");
-		props.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+		props.setProperty("hibernate.hbm2ddl.auto", "validate");
 
 		entityManagerFactory.setJpaProperties(props);
 		return entityManagerFactory;
