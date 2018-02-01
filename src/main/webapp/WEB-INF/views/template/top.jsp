@@ -11,7 +11,7 @@
 		<meta charset="UTF-8"></meta>
 	</head>
 	<body>
-		<nav class="navbar navbar-default" role="navigation">
+		<nav class="navbar navbar-inverse" role="navigation">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="<c:url value='/' />">Home</a>
 				<c:if test="${logado}">
