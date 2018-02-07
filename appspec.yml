@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+hooks:
+  BeforeInstall:
+  - location: /scripts/deleta-aplicacao.sh
+  ApplicationStart:
+  - location: /scripts/reinicia-servidor.sh
+files:
+  - source: target/loja
+    destination: /var/lib/tomcat8/webapps/loja
