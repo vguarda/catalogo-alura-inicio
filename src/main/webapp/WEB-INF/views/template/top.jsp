@@ -13,7 +13,7 @@
 	<body>
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="<c:url value='/' />">Homex</a>
+				<a class="navbar-brand" href="<c:url value='/' />">Home</a>
 				<c:if test="${logado}">
 					<a class="navbar-brand" href="<c:url value='/produto/form' />">Novo produto</a>
 				</c:if>
